@@ -26,6 +26,8 @@ set(msg_files
   "msg/VelocityHypothesis.msg"
   "msg/DetectionStatus.msg"
   "msg/PerceptionEvent.msg"
+  "msg/Obstacle.msg"
+  "msg/ObstacleArray.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
