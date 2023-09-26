@@ -14,6 +14,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(planning_interfaces REQUIRED)
 
 set(msg_files
   # Control
@@ -22,17 +23,19 @@ set(msg_files
   "msg/ClassType.msg"
   "msg/ClassTypeHypothesis.msg"
   "msg/Detection.msg"
+  "msg/FusedDetection.msg"
   "msg/DetectionHypothesis.msg"
   "msg/VelocityHypothesis.msg"
   "msg/DetectionStatus.msg"
   "msg/PerceptionEvent.msg"
+  "msg/FusedPerceptionEvent.msg"
   "msg/Obstacle.msg"
   "msg/ObstacleArray.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
-  DEPENDENCIES std_msgs geometry_msgs nav_msgs
+  DEPENDENCIES std_msgs geometry_msgs nav_msgs planning_interfaces
   ADD_LINTER_TESTS
 )
 

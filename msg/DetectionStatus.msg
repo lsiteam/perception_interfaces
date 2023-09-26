@@ -14,6 +14,16 @@ uint8 TRAFFIC_LIGHT_RED=8
 uint8 TRAFFIC_LIGHT_GREEN=9
 uint8 TRAFFIC_LIGHT_AMBER=10
 uint8 UNKNOWN=11
+# Generation
+uint8 EGO=0
+uint8 COOPERATION=1
+uint8 MATCHING=2
+# Degree
+uint8 LOW=0
+uint8 MEDIUM=1
+uint8 HIGH=2
 
-uint8 status
-uint8 position
+uint8 status     # Detection status for static/dynamic objects
+uint8 position   # Detection sematic position with respect to ego
+uint8 generation # Detection system generation
+uint8 degree     # Detection semantic covariance degree
