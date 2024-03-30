@@ -15,6 +15,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(planning_interfaces REQUIRED)
+find_package(vehicle_interfaces REQUIRED)
 
 set(msg_files
   # Control
@@ -35,7 +36,7 @@ set(msg_files
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
-  DEPENDENCIES std_msgs geometry_msgs nav_msgs planning_interfaces
+  DEPENDENCIES std_msgs geometry_msgs nav_msgs planning_interfaces vehicle_interfaces
   ADD_LINTER_TESTS
 )
 

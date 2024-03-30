@@ -6,4 +6,3 @@ perception_interfaces/ClassType type                 # Class type of the dectect
 geometry_msgs/Vector3 velocity                       # Velocity computed from the detection
 perception_interfaces/DetectionStatus status         # Detection status
 planning_interfaces/Trajectory predicted_trajectory  # Predicted Trajectory of detection
-perception_interfaces/Obstacle polygon               # Detection processed polygon
