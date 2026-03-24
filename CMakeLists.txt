@@ -31,6 +31,8 @@ set(msg_files
   "msg/ObstacleArray.msg"
   "msg/PredictedTrajectory.msg"
   "msg/PredictedTrajectoryState.msg"
+  "msg/GroundTruthDetection.msg"
+  "msg/GroundTruthPerception.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
